@@ -22,7 +22,7 @@ TaskHub Admin là giao diện web quản trị dành cho hệ thống TaskHub AI
 Tạo file `.env.local` trong thư mục gốc và cấu hình:
 
 ```env
-VITE_BACKEND_BASE_URL=https://taskhub-backend-ords.onrender.com
+VITE_BACKEND_BASE_URL=[đường dẫn backend deploy]
 ```
 
 Nếu không cấu hình, ứng dụng sẽ sử dụng giá trị mặc định đang được khai báo trong `src/api/adminApi.js`.
@@ -33,8 +33,6 @@ Nếu không cấu hình, ứng dụng sẽ sử dụng giá trị mặc định
 npm install
 npm run dev
 ```
-
-Mặc định Vite sẽ chạy tại `http://127.0.0.1:5173`.
 
 ## Build production
 

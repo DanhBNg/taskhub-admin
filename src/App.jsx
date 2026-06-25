@@ -223,7 +223,7 @@ function ProjectsTable({ projects, onChangeStatus }) {
                   <td>{project.memberCount}</td>
                   <td><span className={`pill ${status === 'archived' ? 'warning' : 'success'}`}>{status}</span></td>
                   <td>{formatDate(project.createdAt)}</td>
-                  <td><button className="ghost-button" onClick={() => onChangeStatus(project.id, nextStatus)}>{nextStatus === 'archived' ? 'Archive' : 'Mở lại'}</button></td>
+                  <td><button className="ghost-button" onClick={() => onChangeStatus(project.id, nextStatus)}>{nextStatus === 'archived' ? 'Lưu trữ' : 'Mở lại'}</button></td>
                 </tr>
               );
             })}

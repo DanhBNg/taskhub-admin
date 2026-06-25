@@ -18,7 +18,7 @@ async function requestAdmin(path, token, options = {}) {
   }
 
   if (!response.ok) {
-    throw new Error(payload.error || 'Kh?ng th? g?i API qu?n tr?.');
+    throw new Error(payload.error || 'Không thể gọi API quản trị.');
   }
 
   return payload;
